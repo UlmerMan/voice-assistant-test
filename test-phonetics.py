@@ -3,6 +3,7 @@ from pyphonetics import Metaphone
 rs = Metaphone()
 
 distance = []
+out = []
 
 dictionary = [
     "hey",
@@ -19,17 +20,19 @@ dictionary = [
 ]
 
 def phonetic_dist(voice):
-    for word in dictionary:
-        distance.append(rs.distance(voice, word))
+    inp = ''
+    inp = voice
+    inp.split()
+    i = 0
+    while i < len(inp):
+        for phrase in dictionary:
+            distance.append(rs.distance(inp[i], phrase))
+        min_dist = distance.index(min(distance))
+        print(min_dist)
+        if min(distance) < 2:
+            inp[i] = dictionary[min_dist]
+        i += 1
+    ''.join(inp)
+    return inp
 
-    for i in distance:
-        print(i)
-
-    min_dist = distance.index(min(distance))
-    print(min_dist)
-    voice = dictionary[min_dist]
-    if min(distance) > 2:
-        return None
-    return voice
-
-print(phonetic_dist('stoppen'))
+print(phonetic_dist("test"))

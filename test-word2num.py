@@ -1,3 +1,4 @@
 import zahlwort2num
 
-print(zahlwort2num.convert("hunderteins"))
+z2n = zahlwort2num
+print(z2n.convert("hunderteins"))
