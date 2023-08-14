@@ -1,9 +1,19 @@
 from pyphonetics import Metaphone
+import logging
 
-rs = Metaphone()
 
+logging.basicConfig(
+    filename='voice.log',
+    filemode='a', format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%d-%b-%y %H:%M:%S',
+    level='DEBUG'
+)
+
+mp = Metaphone()
+
+string = "hey computor"
 distance = []
-out = []
+
 
 dictionary = [
     "hey",
@@ -19,20 +29,21 @@ dictionary = [
     "aktivieren"
 ]
 
-def phonetic_dist(voice):
-    inp = ''
-    inp = voice
-    inp.split()
-    i = 0
-    while i < len(inp):
-        for phrase in dictionary:
-            distance.append(rs.distance(inp[i], phrase))
-        min_dist = distance.index(min(distance))
-        print(min_dist)
-        if min(distance) < 2:
-            inp[i] = dictionary[min_dist]
-        i += 1
-    ''.join(inp)
-    return inp
 
-print(phonetic_dist("test"))
+def phonetic_dist(string):
+    array = string.split()
+    logging.debug('testing phonetics of: "' + string + '"')
+    for index, word in enumerate(array):
+        for phrase in dictionary:
+            distance.append(mp.distance(word, phrase))
+        min_dist = distance.index(min(distance))
+        logging.debug('min_dist = "' + str(min_dist) + '"')
+        if min(distance) < 2:
+            array[index] = dictionary[min_dist]
+        distance.clear()
+    final_string = ' '.join(array)
+    logging.debug('result: "' + final_string + '"')
+    return final_string
+        
+
+print(phonetic_dist(string))

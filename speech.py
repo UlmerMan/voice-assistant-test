@@ -35,7 +35,7 @@ mic = pyaudio.PyAudio()
 stream = mic.open(format=pyaudio.paInt16, channels=1,
                   rate=16000, input=True, frames_per_buffer=8192)
 
-client.connect("192.168.30.9", 1883, 60)
+#client.connect("192.168.30.9", 1883, 60)
 
 stream.start_stream()
 
