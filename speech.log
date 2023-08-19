@@ -1,0 +1,513 @@
+18-Aug-23 15:20:41 - root - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 56, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 15:20:43 - root - DEBUG - Voice detected: sah die überführung ist auch corso mich
+18-Aug-23 15:20:43 - root - DEBUG - testing phonetics of: sah die überführung ist auch corso mich
+18-Aug-23 15:20:43 - root - DEBUG - min_dist = 0
+18-Aug-23 15:20:43 - root - DEBUG - min_dist = 0
+18-Aug-23 15:20:43 - root - DEBUG - min_dist = 10
+18-Aug-23 15:20:43 - root - DEBUG - min_dist = 2
+18-Aug-23 15:20:43 - root - DEBUG - min_dist = 2
+18-Aug-23 15:20:43 - root - DEBUG - min_dist = 2
+18-Aug-23 15:20:43 - root - DEBUG - min_dist = 6
+18-Aug-23 15:20:43 - root - DEBUG - result: hey hey überführung ist aus corso hoch
+18-Aug-23 15:20:47 - root - DEBUG - Voice detected: ach ja zimmer steht die frage war also haben
+18-Aug-23 15:20:47 - root - DEBUG - testing phonetics of: ach ja zimmer steht die frage war also haben
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 2
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 0
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 8
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 8
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 0
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 0
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 0
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 2
+18-Aug-23 15:20:47 - root - DEBUG - min_dist = 0
+18-Aug-23 15:20:47 - root - DEBUG - result: aus hey zimmer stopp hey frage war aus haben
+18-Aug-23 15:21:16 - root - DEBUG - Voice detected: ja das fand ich es aber meine
+18-Aug-23 15:21:16 - root - DEBUG - testing phonetics of: ja das fand ich es aber meine
+18-Aug-23 15:21:16 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:16 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:16 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:16 - root - DEBUG - min_dist = 6
+18-Aug-23 15:21:16 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:16 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:16 - root - DEBUG - min_dist = 4
+18-Aug-23 15:21:16 - root - DEBUG - result: hey aus fand hoch aus aber an
+18-Aug-23 15:21:42 - root - DEBUG - Voice detected: er hat es nicht richard analysieren und je größer jeder aber richtig hey computer starb
+18-Aug-23 15:21:42 - root - DEBUG - testing phonetics of: er hat es nicht richard analysieren und je größer jeder aber richtig hey computer starb
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 10
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 1
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 7
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 1
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 8
+18-Aug-23 15:21:42 - root - DEBUG - result: er hey aus licht richard analysieren und hey größer jeder aber richtig hey computer starb
+18-Aug-23 15:21:42 - root - DEBUG - testing phonetics of: er hey aus licht richard analysieren und hey größer jeder aber richtig hey computer starb
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 10
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 1
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 7
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 1
+18-Aug-23 15:21:42 - root - DEBUG - min_dist = 8
+18-Aug-23 15:21:42 - root - DEBUG - result: er hey aus licht richard analysieren und hey größer jeder aber richtig hey computer starb
+18-Aug-23 15:21:50 - root - DEBUG - Voice detected: herr auge das würden wir auch so hell sein dass
+18-Aug-23 15:21:50 - root - DEBUG - testing phonetics of: herr auge das würden wir auch so hell sein dass
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 5
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 4
+18-Aug-23 15:21:50 - root - DEBUG - min_dist = 2
+18-Aug-23 15:21:50 - root - DEBUG - result: hey aus aus würden wir aus hey hey an aus
+18-Aug-23 15:21:51 - root - DEBUG - Voice detected: schön
+18-Aug-23 15:21:51 - root - DEBUG - testing phonetics of: schön
+18-Aug-23 15:21:52 - root - DEBUG - min_dist = 3
+18-Aug-23 15:21:52 - root - DEBUG - result: schön
+18-Aug-23 15:22:03 - root - DEBUG - Voice detected: okay aber wer und das längere sie puma heulen aber haben ja rivalen an kräftige fachkräftemangel tage mangeln umsatz sinn
+18-Aug-23 15:22:03 - root - DEBUG - testing phonetics of: okay aber wer und das längere sie puma heulen aber haben ja rivalen an kräftige fachkräftemangel tage mangeln umsatz sinn
+18-Aug-23 15:22:03 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:03 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:03 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:03 - root - DEBUG - min_dist = 3
+18-Aug-23 15:22:03 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 7
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 5
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 1
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 5
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 1
+18-Aug-23 15:22:04 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:04 - root - DEBUG - result: okay aber wer und aus längere hey puma heulen aber haben hey rivalen an kräftige fachkräftemangel tage mangeln umsatz an
+18-Aug-23 15:22:21 - root - DEBUG - Voice detected: er darf ich mir der name notieren den himmel sondern ich auf geschrieben das für
+18-Aug-23 15:22:21 - root - DEBUG - testing phonetics of: er darf ich mir der name notieren den himmel sondern ich auf geschrieben das für
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 6
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 7
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 7
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 6
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:21 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:21 - root - DEBUG - result: er darf hoch mir der name notieren an himmel sondern hoch aus geschrieben aus für
+18-Aug-23 15:22:27 - root - DEBUG - Voice detected: ok also erhöhen
+18-Aug-23 15:22:27 - root - DEBUG - testing phonetics of: ok also erhöhen
+18-Aug-23 15:22:27 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:27 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:27 - root - DEBUG - min_dist = 5
+18-Aug-23 15:22:27 - root - DEBUG - result: ok aus erhöhen
+18-Aug-23 15:22:31 - root - DEBUG - Voice detected: okay also partner danke schön
+18-Aug-23 15:22:31 - root - DEBUG - testing phonetics of: okay also partner danke schön
+18-Aug-23 15:22:31 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:31 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:31 - root - DEBUG - min_dist = 5
+18-Aug-23 15:22:31 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:31 - root - DEBUG - min_dist = 3
+18-Aug-23 15:22:31 - root - DEBUG - result: okay aus partner danke schön
+18-Aug-23 15:22:34 - root - DEBUG - Voice detected: ein
+18-Aug-23 15:22:34 - root - DEBUG - testing phonetics of: ein
+18-Aug-23 15:22:34 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:34 - root - DEBUG - result: an
+18-Aug-23 15:22:41 - root - DEBUG - Voice detected: allseits sie hans nur kurz laufen lasse an
+18-Aug-23 15:22:41 - root - DEBUG - testing phonetics of: allseits sie hans nur kurz laufen lasse an
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 3
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:41 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:41 - root - DEBUG - result: allseits hey hans nur kurz laufen aus an
+18-Aug-23 15:22:48 - root - DEBUG - Voice detected: aber sie eine zweimal schadet und man muss gegen entzündungen der haut wissenschaft
+18-Aug-23 15:22:48 - root - DEBUG - testing phonetics of: aber sie eine zweimal schadet und man muss gegen entzündungen der haut wissenschaft
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 8
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 3
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 3
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 5
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:48 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:48 - root - DEBUG - result: aber hey an zweimal schadet und an aus gegen entzündungen der hey wissenschaft
+18-Aug-23 15:22:53 - root - DEBUG - Voice detected: beim auch die prinz anlage not schaffung sohn hat oder nett
+18-Aug-23 15:22:53 - root - DEBUG - testing phonetics of: beim auch die prinz anlage not schaffung sohn hat oder nett
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 2
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 3
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 4
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 7
+18-Aug-23 15:22:53 - root - DEBUG - min_dist = 0
+18-Aug-23 15:22:53 - root - DEBUG - result: beim aus hey prinz anlage not schaffung an hey oder nett
+18-Aug-23 15:23:06 - root - DEBUG - Voice detected: ich im netz heiß diskutiert und mit viel schimpfe und mit eine mögliche marianne technisches kein problem bei hohen temperaturen mit gas zu schauen aber
+18-Aug-23 15:23:06 - root - DEBUG - testing phonetics of: ich im netz heiß diskutiert und mit viel schimpfe und mit eine mögliche marianne technisches kein problem bei hohen temperaturen mit gas zu schauen aber
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 6
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 1
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 8
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 5
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 1
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:06 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:06 - root - DEBUG - result: hoch im netz hey diskutiert und mit viel schimpfe und mit an mögliche marianne technisches an problem hey hohen temperaturen mit aus hey schauen aber
+18-Aug-23 15:23:11 - root - DEBUG - Voice detected: funktionieren nur eins steuergerät hergibt und es heißt sendung auf
+18-Aug-23 15:23:11 - root - DEBUG - testing phonetics of: funktionieren nur eins steuergerät hergibt und es heißt sendung auf
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 10
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 8
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 5
+18-Aug-23 15:23:11 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:11 - root - DEBUG - result: funktionieren nur eins steuergerät hergibt und aus heißt sendung aus
+18-Aug-23 15:23:19 - root - DEBUG - Voice detected: stufe zwei und dann auf der tasche folge des standlicht angeht und anschauen
+18-Aug-23 15:23:19 - root - DEBUG - testing phonetics of: stufe zwei und dann auf der tasche folge des standlicht angeht und anschauen
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 8
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:19 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:19 - root - DEBUG - result: stopp zwei und an aus der tasche folge aus standlicht angeht und anschauen
+18-Aug-23 15:23:25 - root - DEBUG - Voice detected: von deinem kann seine service rezept für müssen rolle wie soll ich läuft oder andere direkt aufs gas
+18-Aug-23 15:23:25 - root - DEBUG - testing phonetics of: von deinem kann seine service rezept für müssen rolle wie soll ich läuft oder andere direkt aufs gas
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 1
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 6
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 7
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 7
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:25 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:25 - root - DEBUG - result: an deinem an an service rezept für müssen rolle hey soll hoch licht oder runter direkt aus aus
+18-Aug-23 15:23:31 - root - DEBUG - Voice detected: heißt nur des cash und ostern muss auf ihre karriere der an logo
+18-Aug-23 15:23:31 - root - DEBUG - testing phonetics of: heißt nur des cash und ostern muss auf ihre karriere der an logo
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 6
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 5
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:31 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:31 - root - DEBUG - result: heißt nur aus hoch und ostern aus aus ihre karriere der an logo
+18-Aug-23 15:23:39 - root - DEBUG - Voice detected: hey computer stabs mehr entscheiden
+18-Aug-23 15:23:39 - root - DEBUG - testing phonetics of: hey computer stabs mehr entscheiden
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 1
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 8
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 5
+18-Aug-23 15:23:39 - root - DEBUG - result: hey computer stabs mehr entscheiden
+18-Aug-23 15:23:39 - root - DEBUG - testing phonetics of: hey computer stabs mehr entscheiden
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 1
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 8
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:39 - root - DEBUG - min_dist = 5
+18-Aug-23 15:23:39 - root - DEBUG - result: hey computer stabs mehr entscheiden
+18-Aug-23 15:23:50 - root - DEBUG - Voice detected: man an benzinpumpe hilfe über nennt es gibt es ja unserer findet im internet schließe nur die haben schon in solange gegangen sein
+18-Aug-23 15:23:50 - root - DEBUG - testing phonetics of: man an benzinpumpe hilfe über nennt es gibt es ja unserer findet im internet schließe nur die haben schon in solange gegangen sein
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 8
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 7
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 7
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 7
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:50 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:50 - root - DEBUG - result: an an benzinpumpe hilfe über nennt aus gibt aus hey unserer findet im internet schließe nur hey haben schon an solange gegangen an
+18-Aug-23 15:23:58 - root - DEBUG - Voice detected: weil die jährlich als kann von geschosse und die wichtigsten informationen wenn er sich inzwischen ist vor ende oktober führen
+18-Aug-23 15:23:58 - root - DEBUG - testing phonetics of: weil die jährlich als kann von geschosse und die wichtigsten informationen wenn er sich inzwischen ist vor ende oktober führen
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 5
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 6
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 2
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 0
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 3
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 7
+18-Aug-23 15:23:58 - root - DEBUG - min_dist = 4
+18-Aug-23 15:23:58 - root - DEBUG - result: weil hey jährlich aus an an geschosse und hey wichtigsten informationen an er hoch inzwischen ist vor ende oktober führen
+18-Aug-23 15:24:06 - root - DEBUG - Voice detected: hey computer shop
+18-Aug-23 15:24:06 - root - DEBUG - testing phonetics of: hey computer shop
+18-Aug-23 15:24:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:24:06 - root - DEBUG - min_dist = 1
+18-Aug-23 15:24:06 - root - DEBUG - min_dist = 11
+18-Aug-23 15:24:06 - root - DEBUG - result: hey computer shop
+18-Aug-23 15:24:06 - root - DEBUG - testing phonetics of: hey computer shop
+18-Aug-23 15:24:06 - root - DEBUG - min_dist = 0
+18-Aug-23 15:24:06 - root - DEBUG - min_dist = 1
+18-Aug-23 15:24:06 - root - DEBUG - min_dist = 11
+18-Aug-23 15:24:06 - root - DEBUG - result: hey computer shop
+18-Aug-23 15:24:15 - root - DEBUG - Voice detected: hey computer stoppen
+18-Aug-23 15:24:15 - root - DEBUG - testing phonetics of: hey computer stoppen
+18-Aug-23 15:24:15 - root - DEBUG - min_dist = 0
+18-Aug-23 15:24:15 - root - DEBUG - min_dist = 1
+18-Aug-23 15:24:15 - root - DEBUG - min_dist = 8
+18-Aug-23 15:24:15 - root - DEBUG - result: hey computer stopp
+18-Aug-23 15:24:15 - root - DEBUG - testing phonetics of: hey computer stopp
+18-Aug-23 15:24:15 - root - DEBUG - min_dist = 0
+18-Aug-23 15:24:15 - root - DEBUG - min_dist = 1
+18-Aug-23 15:24:15 - root - DEBUG - min_dist = 8
+18-Aug-23 15:24:15 - root - DEBUG - result: hey computer stopp
+18-Aug-23 15:28:09 - root - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 56, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 15:28:09 - root - DEBUG - Voice detected: hey computer
+18-Aug-23 15:28:09 - root - DEBUG - testing phonetics of: hey computer
+18-Aug-23 15:28:09 - root - DEBUG - min_dist = 0
+18-Aug-23 15:28:09 - root - DEBUG - min_dist = 1
+18-Aug-23 15:28:09 - root - DEBUG - result: hey computer
+18-Aug-23 15:28:09 - root - DEBUG - testing phonetics of: hey computer
+18-Aug-23 15:28:09 - root - DEBUG - min_dist = 0
+18-Aug-23 15:28:09 - root - DEBUG - min_dist = 1
+18-Aug-23 15:28:09 - root - DEBUG - result: hey computer
+18-Aug-23 15:34:10 - root - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 56, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 15:34:11 - root - DEBUG - Voice detected: hey computer
+18-Aug-23 15:34:11 - root - DEBUG - testing phonetics of: hey computer
+18-Aug-23 15:34:11 - root - DEBUG - min_dist = 0
+18-Aug-23 15:34:11 - root - DEBUG - min_dist = 1
+18-Aug-23 15:34:11 - root - DEBUG - result: hey computer
+18-Aug-23 15:34:11 - root - DEBUG - testing phonetics of: hey computer
+18-Aug-23 15:34:11 - root - DEBUG - min_dist = 0
+18-Aug-23 15:34:11 - root - DEBUG - min_dist = 1
+18-Aug-23 15:34:11 - root - DEBUG - result: hey computer
+18-Aug-23 15:34:20 - root - DEBUG - Voice detected: mit störende dem weg freund
+18-Aug-23 15:34:20 - root - DEBUG - testing phonetics of: mit störende dem weg freund
+18-Aug-23 15:34:20 - root - DEBUG - min_dist = 0
+18-Aug-23 15:34:20 - root - DEBUG - min_dist = 7
+18-Aug-23 15:34:20 - root - DEBUG - min_dist = 0
+18-Aug-23 15:34:20 - root - DEBUG - min_dist = 0
+18-Aug-23 15:34:20 - root - DEBUG - min_dist = 7
+18-Aug-23 15:34:20 - root - DEBUG - result: mit störende dem weg freund
+18-Aug-23 15:35:11 - root - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 56, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 15:35:12 - root - DEBUG - Voice detected: hey computer starb
+18-Aug-23 15:36:09 - root - DEBUG - testing phonetics of: hey computer starb
+18-Aug-23 15:36:09 - root - DEBUG - min_dist = 0
+18-Aug-23 15:36:09 - root - DEBUG - min_dist = 1
+18-Aug-23 15:36:09 - root - DEBUG - min_dist = 8
+18-Aug-23 15:36:09 - root - DEBUG - result: hey computer starb
+18-Aug-23 15:36:09 - root - DEBUG - testing phonetics of: hey computer starb
+18-Aug-23 15:36:09 - root - DEBUG - min_dist = 0
+18-Aug-23 15:36:09 - root - DEBUG - min_dist = 1
+18-Aug-23 15:36:09 - root - DEBUG - min_dist = 8
+18-Aug-23 15:36:09 - root - DEBUG - result: hey computer starb
+18-Aug-23 15:36:10 - root - DEBUG - Voice detected: eine stellt er da mit möchte star nicht sogar neigung könne
+18-Aug-23 19:06:20 - root - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 56, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 19:06:24 - root - DEBUG - Voice detected: sorry
+18-Aug-23 19:06:52 - root - DEBUG - testing phonetics of: sorry
+18-Aug-23 19:08:17 - root - DEBUG - min_dist = 0
+18-Aug-23 19:08:42 - root - DEBUG - result: sorry
+18-Aug-23 19:10:43 - root - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 56, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 19:10:48 - root - DEBUG - Voice detected: hey computer staub
+18-Aug-23 19:10:48 - root - DEBUG - testing phonetics of: hey computer staub
+18-Aug-23 19:10:48 - root - DEBUG - min_dist = 0
+18-Aug-23 19:10:48 - root - DEBUG - min_dist = 1
+18-Aug-23 19:10:48 - root - DEBUG - min_dist = 8
+18-Aug-23 19:10:48 - root - DEBUG - result: hey computer stopp
+18-Aug-23 19:10:48 - root - DEBUG - testing phonetics of: hey computer stopp
+18-Aug-23 19:10:48 - root - DEBUG - min_dist = 0
+18-Aug-23 19:10:48 - root - DEBUG - min_dist = 1
+18-Aug-23 19:10:48 - root - DEBUG - min_dist = 8
+18-Aug-23 19:10:48 - root - DEBUG - result: hey computer stopp
