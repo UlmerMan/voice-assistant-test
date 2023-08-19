@@ -1,0 +1,66 @@
+root - WARNING - testing phonetics
+root - INFO - testing phonetics
+root - WARNING - testing phonetics
+14-Aug-23 12:07:04 - WARNING - testing phonetics
+14-Aug-23 12:09:24 - WARNING - testing phonetics of:hey computor
+14-Aug-23 12:09:33 - WARNING - testing phonetics of: hey computor
+14-Aug-23 12:10:01 - WARNING - testing phonetics of: "hey computor"
+14-Aug-23 12:15:36 - WARNING - testing phonetics of: "hey computor"
+14-Aug-23 12:15:36 - WARNING - testing phonetics of: "hey computor"
+14-Aug-23 12:15:36 - WARNING - testing phonetics of: "hey computor"
+14-Aug-23 12:55:39 - DEBUG - testing phonetics of: "hey computor"
+14-Aug-23 12:57:25 - DEBUG - testing phonetics of: "hey computor"
+14-Aug-23 12:57:25 - DEBUG - min_dist = "0"
+14-Aug-23 12:57:25 - DEBUG - min_dist = "1"
+14-Aug-23 12:57:25 - DEBUG - result: "hey computer"
+14-Aug-23 13:11:39 - DEBUG - testing phonetics of: "hey computor"
+14-Aug-23 13:11:39 - DEBUG - min_dist = "0"
+14-Aug-23 13:11:39 - DEBUG - min_dist = "1"
+14-Aug-23 13:11:39 - DEBUG - result: "hey computer"
+14-Aug-23 13:18:45 - ERROR - Couldn't connect to mqtt Broker!
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 45, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+14-Aug-23 13:19:58 - ERROR - Couldn't connect to mqtt Broker! 
+ With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 45, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+14-Aug-23 13:20:56 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 45, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
