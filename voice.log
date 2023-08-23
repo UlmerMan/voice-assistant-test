@@ -1,57 +1,7 @@
-root - WARNING - testing phonetics
-root - INFO - testing phonetics
-root - WARNING - testing phonetics
-14-Aug-23 12:07:04 - WARNING - testing phonetics
-14-Aug-23 12:09:24 - WARNING - testing phonetics of:hey computor
-14-Aug-23 12:09:33 - WARNING - testing phonetics of: hey computor
-14-Aug-23 12:10:01 - WARNING - testing phonetics of: "hey computor"
-14-Aug-23 12:15:36 - WARNING - testing phonetics of: "hey computor"
-14-Aug-23 12:15:36 - WARNING - testing phonetics of: "hey computor"
-14-Aug-23 12:15:36 - WARNING - testing phonetics of: "hey computor"
-14-Aug-23 12:55:39 - DEBUG - testing phonetics of: "hey computor"
-14-Aug-23 12:57:25 - DEBUG - testing phonetics of: "hey computor"
-14-Aug-23 12:57:25 - DEBUG - min_dist = "0"
-14-Aug-23 12:57:25 - DEBUG - min_dist = "1"
-14-Aug-23 12:57:25 - DEBUG - result: "hey computer"
-14-Aug-23 13:11:39 - DEBUG - testing phonetics of: "hey computor"
-14-Aug-23 13:11:39 - DEBUG - min_dist = "0"
-14-Aug-23 13:11:39 - DEBUG - min_dist = "1"
-14-Aug-23 13:11:39 - DEBUG - result: "hey computer"
-14-Aug-23 13:18:45 - ERROR - Couldn't connect to mqtt Broker!
-Traceback (most recent call last):
-  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 45, in <module>
-    client.connect("192.168.30.9", 1883, 60)
-  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
-    return self.reconnect()
-  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
-    sock = self._create_socket_connection()
-  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
-    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
-  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
-    raise err
-  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
-    sock.connect(sa)
-TimeoutError: timed out
-14-Aug-23 13:19:58 - ERROR - Couldn't connect to mqtt Broker! 
- With the following message:
-Traceback (most recent call last):
-  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 45, in <module>
-    client.connect("192.168.30.9", 1883, 60)
-  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
-    return self.reconnect()
-  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
-    sock = self._create_socket_connection()
-  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
-    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
-  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
-    raise err
-  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
-    sock.connect(sa)
-TimeoutError: timed out
-14-Aug-23 13:20:56 - ERROR - Couldn't connect to mqtt Broker! 
+18-Aug-23 13:57:09 - ERROR - Couldn't connect to mqtt Broker! 
 With the following message:
 Traceback (most recent call last):
-  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 45, in <module>
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
     client.connect("192.168.30.9", 1883, 60)
   File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
     return self.reconnect()
@@ -64,3 +14,429 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/socket.py", line 833, in create_connection
     sock.connect(sa)
 TimeoutError: timed out
+Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 13:57:09 - DEBUG - Voice detected: hey computer shop
+Voice detected: hey computer shop
+18-Aug-23 13:57:09 - DEBUG - testing phonetics of: hey computer shop
+testing phonetics of: hey computer shop
+18-Aug-23 13:57:09 - DEBUG - min_dist = 4
+min_dist = 4
+18-Aug-23 13:57:09 - DEBUG - min_dist = 5
+min_dist = 5
+18-Aug-23 13:57:09 - DEBUG - min_dist = 0
+min_dist = 0
+18-Aug-23 13:57:09 - DEBUG - result: hoch computer aus
+result: hoch computer aus
+18-Aug-23 13:57:11 - DEBUG - Voice detected: mama
+Voice detected: mama
+18-Aug-23 13:57:11 - DEBUG - testing phonetics of: mama
+testing phonetics of: mama
+18-Aug-23 13:57:11 - DEBUG - min_dist = 0
+min_dist = 0
+18-Aug-23 13:57:11 - DEBUG - result: aus
+result: aus
+18-Aug-23 14:00:26 - DEBUG - testing phonetics of: hei computor stopp
+18-Aug-23 14:00:26 - DEBUG - min_dist = 0
+18-Aug-23 14:00:26 - DEBUG - min_dist = 1
+18-Aug-23 14:00:26 - DEBUG - min_dist = 8
+18-Aug-23 14:00:26 - DEBUG - result: hey computer stop
+18-Aug-23 14:02:59 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:05:08 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:05:09 - DEBUG - Voice detected: hey computer stoppen ein amerika
+Voice detected: hey computer stoppen ein amerika
+18-Aug-23 14:05:09 - DEBUG - testing phonetics of: hey computer stoppen ein amerika
+testing phonetics of: hey computer stoppen ein amerika
+18-Aug-23 14:05:09 - DEBUG - min_dist = 4
+min_dist = 4
+18-Aug-23 14:05:09 - DEBUG - min_dist = 5
+min_dist = 5
+18-Aug-23 14:05:09 - DEBUG - min_dist = 6
+min_dist = 6
+18-Aug-23 14:05:09 - DEBUG - min_dist = 2
+min_dist = 2
+18-Aug-23 14:05:09 - DEBUG - min_dist = 0
+min_dist = 0
+18-Aug-23 14:05:09 - DEBUG - result: hoch computer stop an amerika
+result: hoch computer stop an amerika
+18-Aug-23 14:05:10 - DEBUG - Voice detected: der blaue
+Voice detected: der blaue
+18-Aug-23 14:05:10 - DEBUG - testing phonetics of: der blaue
+testing phonetics of: der blaue
+18-Aug-23 14:05:10 - DEBUG - min_dist = 0
+min_dist = 0
+18-Aug-23 14:05:10 - DEBUG - min_dist = 0
+min_dist = 0
+18-Aug-23 14:05:10 - DEBUG - result: aus aus
+result: aus aus
+18-Aug-23 14:06:01 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 54, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:06:01 - DEBUG - Voice detected: hey computer starb
+Voice detected: hey computer starb
+18-Aug-23 14:06:01 - DEBUG - testing phonetics of: hey computer starb
+testing phonetics of: hey computer starb
+18-Aug-23 14:06:01 - DEBUG - min_dist = 4
+min_dist = 4
+18-Aug-23 14:06:01 - DEBUG - min_dist = 5
+min_dist = 5
+18-Aug-23 14:06:01 - DEBUG - min_dist = 6
+min_dist = 6
+18-Aug-23 14:06:01 - DEBUG - result: hoch computer starb
+result: hoch computer starb
+18-Aug-23 14:08:35 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 44, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:08:40 - DEBUG - Voice detected: eine
+18-Aug-23 14:08:40 - DEBUG - testing phonetics of: eine
+18-Aug-23 14:08:40 - DEBUG - min_dist = 2
+18-Aug-23 14:08:40 - DEBUG - result: an
+18-Aug-23 14:08:48 - DEBUG - Voice detected: ihre wieder vorbei
+18-Aug-23 14:08:48 - DEBUG - testing phonetics of: ihre wieder vorbei
+18-Aug-23 14:08:48 - DEBUG - min_dist = 0
+18-Aug-23 14:08:48 - DEBUG - min_dist = 5
+18-Aug-23 14:08:48 - DEBUG - min_dist = 0
+18-Aug-23 14:08:48 - DEBUG - result: ihre wieder vorbei
+18-Aug-23 14:08:52 - DEBUG - Voice detected: kann schnell wetterlage essen
+18-Aug-23 14:08:52 - DEBUG - testing phonetics of: kann schnell wetterlage essen
+18-Aug-23 14:08:52 - DEBUG - min_dist = 2
+18-Aug-23 14:08:52 - DEBUG - min_dist = 1
+18-Aug-23 14:08:52 - DEBUG - min_dist = 3
+18-Aug-23 14:08:52 - DEBUG - min_dist = 0
+18-Aug-23 14:08:52 - DEBUG - result: an schnell wetterlage essen
+18-Aug-23 14:09:03 - DEBUG - Voice detected: hey computer stopp
+18-Aug-23 14:09:03 - DEBUG - testing phonetics of: hey computer stopp
+18-Aug-23 14:09:03 - DEBUG - min_dist = 4
+18-Aug-23 14:09:03 - DEBUG - min_dist = 5
+18-Aug-23 14:09:03 - DEBUG - min_dist = 6
+18-Aug-23 14:09:03 - DEBUG - result: hoch computer stop
+18-Aug-23 14:10:04 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 46, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:10:05 - DEBUG - Voice detected: hey computer statt
+18-Aug-23 14:10:05 - DEBUG - testing phonetics of: hey computer statt
+18-Aug-23 14:10:05 - DEBUG - min_dist = 0
+18-Aug-23 14:10:05 - DEBUG - min_dist = 1
+18-Aug-23 14:10:05 - DEBUG - min_dist = 8
+18-Aug-23 14:10:05 - DEBUG - result: hey Computer stop
+18-Aug-23 14:10:13 - DEBUG - Voice detected: hey computer stopp
+18-Aug-23 14:10:13 - DEBUG - testing phonetics of: hey computer stopp
+18-Aug-23 14:10:13 - DEBUG - min_dist = 0
+18-Aug-23 14:10:13 - DEBUG - min_dist = 1
+18-Aug-23 14:10:13 - DEBUG - min_dist = 8
+18-Aug-23 14:10:13 - DEBUG - result: hey Computer stop
+18-Aug-23 14:11:40 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 46, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:11:41 - DEBUG - Voice detected: hey computer staub
+18-Aug-23 14:11:41 - DEBUG - testing phonetics of: hey computer staub
+18-Aug-23 14:11:41 - DEBUG - min_dist = 0
+18-Aug-23 14:11:41 - DEBUG - min_dist = 1
+18-Aug-23 14:11:41 - DEBUG - min_dist = 8
+18-Aug-23 14:11:41 - DEBUG - result: hey Computer stop
+18-Aug-23 14:12:05 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 46, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:12:06 - DEBUG - Voice detected: hey computer starb
+18-Aug-23 14:12:06 - DEBUG - testing phonetics of: hey computer starb
+18-Aug-23 14:12:06 - DEBUG - min_dist = 0
+18-Aug-23 14:12:06 - DEBUG - min_dist = 1
+18-Aug-23 14:12:06 - DEBUG - min_dist = 8
+18-Aug-23 14:12:06 - DEBUG - result: hey Computer starb
+18-Aug-23 14:12:11 - DEBUG - Voice detected: hey computer staub
+18-Aug-23 14:12:11 - DEBUG - testing phonetics of: hey computer staub
+18-Aug-23 14:12:11 - DEBUG - min_dist = 0
+18-Aug-23 14:12:11 - DEBUG - min_dist = 1
+18-Aug-23 14:12:11 - DEBUG - min_dist = 8
+18-Aug-23 14:12:11 - DEBUG - result: hey Computer stopp
+18-Aug-23 14:12:48 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 46, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:12:49 - DEBUG - Voice detected: hey computer stoff
+18-Aug-23 14:12:49 - DEBUG - testing phonetics of: hey computer stoff
+18-Aug-23 14:12:49 - DEBUG - min_dist = 0
+18-Aug-23 14:12:49 - DEBUG - min_dist = 1
+18-Aug-23 14:12:49 - DEBUG - min_dist = 8
+18-Aug-23 14:12:49 - DEBUG - result: hey computer stopp
+18-Aug-23 14:12:49 - DEBUG - testing phonetics of: hey computer stopp
+18-Aug-23 14:12:49 - DEBUG - min_dist = 0
+18-Aug-23 14:12:49 - DEBUG - min_dist = 1
+18-Aug-23 14:12:49 - DEBUG - min_dist = 8
+18-Aug-23 14:12:49 - DEBUG - result: hey computer stopp
+18-Aug-23 14:16:17 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 46, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:20:03 - ERROR - Couldn't connect to mqtt Broker! 
+With the following message:
+Traceback (most recent call last):
+  File "/home/manuel/dev/voice-assistant/speech-legacy.py", line 47, in <module>
+    client.connect("192.168.30.9", 1883, 60)
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/manuel/.local/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+18-Aug-23 14:20:03 - DEBUG - Voice detected: hey computer licht an
+18-Aug-23 14:20:03 - DEBUG - testing phonetics of: hey computer licht an
+18-Aug-23 14:20:03 - DEBUG - min_dist = 0
+18-Aug-23 14:20:03 - DEBUG - min_dist = 1
+18-Aug-23 14:20:03 - DEBUG - min_dist = 3
+18-Aug-23 14:20:03 - DEBUG - min_dist = 4
+18-Aug-23 14:20:03 - DEBUG - result: hey computer licht an
+18-Aug-23 14:20:03 - DEBUG - testing phonetics of: hey computer licht an
+18-Aug-23 14:20:03 - DEBUG - min_dist = 0
+18-Aug-23 14:20:03 - DEBUG - min_dist = 1
+18-Aug-23 14:20:03 - DEBUG - min_dist = 3
+18-Aug-23 14:20:03 - DEBUG - min_dist = 4
+18-Aug-23 14:20:03 - DEBUG - result: hey computer licht an
+18-Aug-23 14:20:17 - DEBUG - Voice detected: keen des hat funktioniert her computer licht an
+18-Aug-23 14:20:17 - DEBUG - testing phonetics of: keen des hat funktioniert her computer licht an
+18-Aug-23 14:20:17 - DEBUG - min_dist = 4
+18-Aug-23 14:20:17 - DEBUG - min_dist = 2
+18-Aug-23 14:20:17 - DEBUG - min_dist = 0
+18-Aug-23 14:20:17 - DEBUG - min_dist = 3
+18-Aug-23 14:20:17 - DEBUG - min_dist = 0
+18-Aug-23 14:20:17 - DEBUG - min_dist = 1
+18-Aug-23 14:20:17 - DEBUG - min_dist = 3
+18-Aug-23 14:20:17 - DEBUG - min_dist = 4
+18-Aug-23 14:20:17 - DEBUG - result: an aus hey funktioniert hey computer licht an
+18-Aug-23 14:20:17 - DEBUG - testing phonetics of: an aus hey funktioniert hey computer licht an
+18-Aug-23 14:20:17 - DEBUG - min_dist = 4
+18-Aug-23 14:20:17 - DEBUG - min_dist = 2
+18-Aug-23 14:20:17 - DEBUG - min_dist = 0
+18-Aug-23 14:20:17 - DEBUG - min_dist = 3
+18-Aug-23 14:20:17 - DEBUG - min_dist = 0
+18-Aug-23 14:20:17 - DEBUG - min_dist = 1
+18-Aug-23 14:20:17 - DEBUG - min_dist = 3
+18-Aug-23 14:20:17 - DEBUG - min_dist = 4
+18-Aug-23 14:20:17 - DEBUG - result: an aus hey funktioniert hey computer licht an
+18-Aug-23 14:20:32 - DEBUG - Voice detected: hey computer licht an
+18-Aug-23 14:20:32 - DEBUG - testing phonetics of: hey computer licht an
+18-Aug-23 14:20:32 - DEBUG - min_dist = 0
+18-Aug-23 14:20:32 - DEBUG - min_dist = 1
+18-Aug-23 14:20:32 - DEBUG - min_dist = 3
+18-Aug-23 14:20:32 - DEBUG - min_dist = 4
+18-Aug-23 14:20:32 - DEBUG - result: hey computer licht an
+18-Aug-23 14:20:32 - DEBUG - testing phonetics of: hey computer licht an
+18-Aug-23 14:20:32 - DEBUG - min_dist = 0
+18-Aug-23 14:20:32 - DEBUG - min_dist = 1
+18-Aug-23 14:20:32 - DEBUG - min_dist = 3
+18-Aug-23 14:20:32 - DEBUG - min_dist = 4
+18-Aug-23 14:20:32 - DEBUG - result: hey computer licht an
+18-Aug-23 14:20:44 - DEBUG - Voice detected: hey computer licht an
+18-Aug-23 14:20:44 - DEBUG - testing phonetics of: hey computer licht an
+18-Aug-23 14:20:44 - DEBUG - min_dist = 0
+18-Aug-23 14:20:44 - DEBUG - min_dist = 1
+18-Aug-23 14:20:44 - DEBUG - min_dist = 3
+18-Aug-23 14:20:44 - DEBUG - min_dist = 4
+18-Aug-23 14:20:44 - DEBUG - result: hey computer licht an
+18-Aug-23 14:20:44 - DEBUG - testing phonetics of: hey computer licht an
+18-Aug-23 14:20:44 - DEBUG - min_dist = 0
+18-Aug-23 14:20:44 - DEBUG - min_dist = 1
+18-Aug-23 14:20:44 - DEBUG - min_dist = 3
+18-Aug-23 14:20:44 - DEBUG - min_dist = 4
+18-Aug-23 14:20:44 - DEBUG - result: hey computer licht an
+2023-08-18 14:47:28,006 - root - DEBUG - testing phonetics of: hei computor stopp
+2023-08-18 14:47:28,013 - root - DEBUG - min_dist = 0
+2023-08-18 14:47:28,015 - root - DEBUG - min_dist = 1
+2023-08-18 14:47:28,018 - root - DEBUG - min_dist = 8
+2023-08-18 14:47:28,018 - root - DEBUG - result: hey computer stop
+2023-08-18 14:48:24,169 - root - DEBUG - testing phonetics of: hei computor stopp
+2023-08-18 14:48:24,174 - root - DEBUG - min_dist = 0
+2023-08-18 14:48:24,175 - root - DEBUG - min_dist = 1
+2023-08-18 14:48:24,177 - root - DEBUG - min_dist = 8
+2023-08-18 14:48:24,177 - root - DEBUG - result: hey computer stop
+18-Aug-23 14:50:13 - root - DEBUG - testing phonetics of: hei computor stopp
+18-Aug-23 14:50:13 - root - DEBUG - min_dist = 0
+18-Aug-23 14:50:13 - root - DEBUG - min_dist = 1
+18-Aug-23 14:50:13 - root - DEBUG - min_dist = 8
+18-Aug-23 14:50:13 - root - DEBUG - result: hey computer stop

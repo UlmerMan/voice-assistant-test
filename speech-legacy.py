@@ -8,29 +8,39 @@ import zahlwort2num
 import logging
 from logging.handlers import RotatingFileHandler
 
-logging.basicConfig(
-    filename='voice.log',
-    filemode='a', format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%d-%b-%y %H:%M:%S',
-    level='DEBUG'
+
+handler = RotatingFileHandler(
+    'speech.log',
+    mode = 'a',
+    maxBytes= 2000000,
+    backupCount= 1,
 )
 
-z2n = zahlwort2num
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s", "%d-%b-%y %H:%M:%S")
+handler.setLevel(logging.DEBUG)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
-rs = Metaphone()
+z2n = zahlwort2num
+mp = Metaphone()
 
 distance = []
 
 dictionary = [
+    "hey",
+    "computer",
     "aus",
     "licht",
     "an",
-    "Rolladen",
+    "rolladen",
     "hoch",
     "runter",
-    "stop",
+    "stopp",
     "selbstzerstörung",
-    "aktivieren"
+    "aktivieren",
+    "shop"
 ]
 
 client = mqtt.Client()
@@ -44,8 +54,12 @@ stream = mic.open(format=pyaudio.paInt16, channels=1,
                   rate=16000, input=True, frames_per_buffer=8192)
 try:
     client.connect("192.168.30.9", 1883, 60)
-except Exception as e:
-    logging.exception("Couldn't connect to mqtt Broker! \nWith the following message:", exc_info=True)
+except TimeoutError:
+    logger.exception(
+        "Couldn't connect to mqtt Broker! \nWith the following message:")
+except Exception:
+    logger.exception(
+        "Couldn't connect to mqtt Broker! \nWith the following message:")
 
 stream.start_stream()
 
@@ -60,28 +74,28 @@ def read_voice():
 
     else:
         return None
-    
+
+
 def phonetic_dist(string):
     array = string.split()
-    logging.debug('testing phonetics of: "' + string + '"')
+    logger.debug('testing phonetics of: %s', string)
     for index, word in enumerate(array):
         for phrase in dictionary:
             distance.append(mp.distance(word, phrase))
         min_dist = distance.index(min(distance))
-        logging.debug('min_dist = "' + str(min_dist) + '"')
+        logger.debug('min_dist = %s', str(min_dist))
         if min(distance) < 2:
             array[index] = dictionary[min_dist]
         distance.clear()
     final_string = ' '.join(array)
-    logging.debug('result: "' + final_string + '"')
+    logger.debug('result: %s', final_string)
     return final_string
-
 
 def check_for_known_phrases(readable_result):
     if readable_result.find("hey computer") >= 0:
-        phonetic_dist(readable_result)      
         if readable_result.find("stopp") >= 0:
             sys.exit()
+            logger.warning('Stopped because of User Input')
         elif readable_result.find("selbstzerstörung aktivieren") >= 0:
             print('Selbstzerstörung aktiviert')
             time.sleep(1)
@@ -93,7 +107,10 @@ def check_for_known_phrases(readable_result):
             print('Booooooooommmmm!!!!')
             sys.exit()
         elif readable_result.find("licht an") >= 0:
-            client.publish("main/hm/manuel/licht/panel", "1")
+            try:
+                client.publish("main/hm/manuel/licht/panel", "1")
+            except Exception:
+                logger.warning("!!! Couldn't send mqtt message !!!")
         elif readable_result.find("licht aus") >= 0:
             client.publish("main/hm/manuel/licht/panel", "0")
         elif readable_result.find("licht süd an") >= 0:
@@ -113,10 +130,13 @@ def check_for_known_phrases(readable_result):
         elif readable_result.find("rollladen runter") >= 0:
             client.publish("main/hm/manuel/rolladen", "0")
         elif readable_result.find("rollladen auf") >= 0:
-            client.publish("main/hm/manuel/rolladen", "0")  
+            client.publish("main/hm/manuel/rolladen", "0")
+
 
 while True:
     decoded_voice = read_voice()
     if decoded_voice:
+        logger.debug('Voice detected: %s', decoded_voice)
         print(decoded_voice)
-        check_for_known_phrases(decoded_voice)
+        check_for_known_phrases(phonetic_dist(decoded_voice))
+        decoded_voice = None
