@@ -31,8 +31,9 @@ model = Model(r"vosk-model-small-de-0.15")
 
 recognizer = KaldiRecognizer(model, 16000)
 
+RESPEAKER_WIDTH = 2
 mic = pyaudio.PyAudio()
-stream = mic.open(format=pyaudio.paInt16, channels=1,
+stream = mic.open(format=mic.get_format_from_width(RESPEAKER_WIDTH), channels=1,
                   rate=16000, input=True, frames_per_buffer=8192)
 
 #client.connect("192.168.30.9", 1883, 60)

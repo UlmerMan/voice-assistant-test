@@ -1,13 +1,14 @@
+"""python speechrecognition"""
+
 import sys
+import time
+import logging
+from logging.handlers import RotatingFileHandler
 from vosk import Model, KaldiRecognizer
 import pyaudio
 import paho.mqtt.client as mqtt
-import time
 from pyphonetics import Metaphone
 import zahlwort2num
-import logging
-from logging.handlers import RotatingFileHandler
-
 
 handler = RotatingFileHandler(
     'speech.log',
